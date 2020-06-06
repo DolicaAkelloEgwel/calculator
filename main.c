@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "add.c"
+#include "subtract.c"
+#include "multiply.c"
+#include "divide.c"
+#include "mod.c"
 
 int main()
 {
@@ -24,19 +28,19 @@ int main()
             break;
              
         case '-':
-            result=num1-num2;
+            result=subtract(num1,num2);
             break;
          
         case '*':
-            result=num1*num2;
+            result=multiply(num1,num2);
             break;
              
         case '/':
-            result=(float)num1/(float)num2;
+            result=divide(num1,num2);
             break;
              
         case '%':
-            result=num1%num2;
+            result=mod(num1,num2);
             break;
         default:
             printf("Invalid operation.\n");
