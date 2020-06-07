@@ -3,7 +3,10 @@ int divide(int num1, int num2)
  
    // Implementation goes here...
 	if(num2 == 0)
-		return 6;
+	{
+		printf("division by zero");
+		exit(0);
+	}
     return 0;
 }
 
