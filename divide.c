@@ -7,6 +7,6 @@ int divide(int num1, int num2)
 		printf("division by zero");
 		exit(0);
 	}
-    return 0;
+    return num1 / num2;
 }
 
